@@ -4,19 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Quote Generator</title>
 
    <link rel="icon" type = "image.jpeg" href="vyntak rbl.jpeg">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
-    <h1>Hello World</h1>
-    <i class="fa-regular fa-address-card"></i>
-    <!-- Script -->
-    <script src="script.js"></script>
 
+
+<body>
+    <div class="quotecontainer" id="quotecontainer">
+
+        <!-- Quote element -->
+    <div class="quoteText">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote"></span>
+        <i class="fas fa-quote-right"></i>
+
+    </div>
+
+        <!-- Author -->
+    <div class="quoteauthor">
+        <span id="author"></span>
+    </div>
+    
+
+        <!-- Buttons -->
+    <div class="buttoncontainer">
+        <button class="twitterbutton" id="twitter" title="Tweet This!">
+                <i class="fab fa-twitter"></i>
+        </button>
+
+        <button id="newquote">New Quote</button>
+    </div>
+
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+
+        <!-- Script -->
+    <script src="script.js"></script>
 
 </body>
 </html>
